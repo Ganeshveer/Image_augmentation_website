@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Augmentation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Augmentor</h1>
+        <div class="explanation">
+            <p>Using this Image augmentation tool, you can easily enhance and diversify your image dataset. Upload multiple images at once and Download all augmented images in a convenient zip file.</p>
+            
+         
+        </div>
+        <form action="/" method="post" enctype="multipart/form-data" id="uploadForm">
+            <div class="dropbox" id="dropbox">
+                <p>Drop files here or click to upload</p>
+                <input type="file" name="photo" accept="image/*" multiple id="fileInput">
+            </div>
+            <button type="submit">START →</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

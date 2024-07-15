@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f090;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.explanation {
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-family: "Trebuchet MS", "Lucida Grande", sans-serif; 
+
+    font-size:16px;
+    padding: 15px;
+    border-radius: 5px;
+   
+}
+
+h1 {
+    align-self: left;
+    margin: 0 0 20px 0;
+    font-family: "Trebuchet MS", "Lucida Grande", sans-serif; 
+    font-size: 2.5em; 
+    color: #333; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); 
+}
+
+form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dropbox {
+    flex-grow: 1;
+    border: 0.5px dashed #007bff;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.dropbox.highlight {
+    background-color: #dfeff9;
+    border-color: #0056b3;
+}
+
+.dropbox p {
+    margin: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Grande", sans-serif; 
+    color: #007bff;
+}
+
+.dropbox:hover {
+    background-color: #dfeff9;
+    border-color: #ffb35d;
+}
+
+button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    font-family: "Trebuchet MS", "Lucida Grande", sans-serif; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-size: 36px;
+}
+
+button:hover {
+    background-color: #f28100;
+}
+
+#fileInput {
+    display: none;
+}

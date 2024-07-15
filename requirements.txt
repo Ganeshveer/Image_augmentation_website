@@ -1,0 +1,5 @@
+Flask
+Flask-Uploads
+albumentations
+opencv-python-headless
+werkzeug
